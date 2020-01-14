@@ -1,2 +1,8 @@
 <h1>Movies#edit</h1>
 <p>Find me in app/views/movies/edit.html.erb</p>
+
+<%= form_form :movie, url: movie_path, method :patch do |f| %>
+    Title: <%= f.text_field :title %><br>
+    Description: <%= f.text_field :description %><br>
+    <%= f.submit %>
+<% end %>

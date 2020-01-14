@@ -31,6 +31,7 @@ class MoviesController < ApplicationController
   end
 
   def destroy
+    @movie.destroy
   end
 
   private
